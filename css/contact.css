@@ -1,0 +1,236 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body styling */
+  body {
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .navbar ul li a:hover,
+  .navbar ul li a.active {
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  /* Contact section styling */
+  .contact {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contact .section-title h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .contact .section-title p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .contact-info a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact form styling */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .contact-form input.error,
+  .contact-form textarea.error {
+    border-color: red;
+    background-color: #fff0f0;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    background-color: #0097a7;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact {
+      padding: 1.5rem;
+    }
+  
+    .contact-form {
+      padding: 1.5rem;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.9rem;
+    }
+  
+    .contact-form button[type="submit"] {
+      font-size: 1rem;
+    }
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .footer a:hover {
+    color: #00bcd4;
+  }
+  
+  .footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer .social-icons {
+    margin: 1rem 0;
+  }
+  
+  .footer .social-icon {
+    display: inline-block;
+    margin: 0 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer .social-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-credit {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .footer .social-icons {
+      margin: 1rem 0;
+    }
+  }
+  

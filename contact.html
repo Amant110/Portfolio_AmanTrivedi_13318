@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Portfolio</title>
+  <link rel="stylesheet" href="./css/contact.css">
+  <style>
+    .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none; 
+  
+  }
+  
+  input.error, textarea.error {
+    border: 1px solid red;
+    
+  }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./contact.html" class="active">Contact</a></li>
+      <li><a href="./resume.html" class="resume-btn">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact">
+    <div class="section-title">
+      <h1>Contact Me</h1>
+      <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+    </div>
+    <div class="contact-info">
+      <p>📧 Email: <a href="mailto:aman3vedi@gmail.com">aman3vedi@gmail.com</a></p>
+      <p>📱 Phone:+916354522329</p>
+      <p>🌐 LinkedIn: <a href="https://www.linkedin.com/in/aman-trivedi-737b5216b/" target="_blank">linkedin.com/in/amantrivedi</a></p>
+    </div>
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form id="contactForm" action="mailto:aman3vedi@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm(event)" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span id="nameError" class="error-message"></span>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error-message"></span>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span id="messageError" class="error-message"></span>
+        
+        <button type="submit">Send Message</button>
+      </form>
+      
+    </div>
+    <script src="./js/validation.js"></script>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>📧 Email: <a href="mailto:aman3vedi@gmail.com">aman3vedi@gmail.com</a></p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/aman-trivedi-737b5216b/" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+          <img src="./images/icons8-linkedin-48.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/amant110" target="_blank" class="social-icon github" aria-label="GitHub">
+          <img src="./images/icons8-github-48.png" alt="GitHub">
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" class="social-icon twitter" aria-label="Twitter">
+          <img src="./images/icons8-insta-48.png" alt="Twitter">
+        </a>
+      </div>
+    </div>
+    <p class="footer-credit">© 2024 Aman Trivedi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
