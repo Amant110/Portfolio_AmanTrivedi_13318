@@ -80,7 +80,9 @@
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
-    opacity: 0.6;;
+    opacity: 0.6;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   
   .home-content h1 {
