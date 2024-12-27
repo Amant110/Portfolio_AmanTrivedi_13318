@@ -73,16 +73,14 @@
     text-align: center;
   }
 
-  .home-content{
-   
-    
-    margin:250px;
-    box-shadow: 10px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    border-radius: 50px;
-    ;
+.home-content {
+    max-width: 800px;
+    padding: 30px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 0.6;;
   }
   
   .home-content h1 {
